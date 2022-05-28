@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  coremakerchallenge:
+    image: ${DOCKER_REGISTRY-}coremakerchallenge
+    build:
+      context: .
+      dockerfile: CoremakerChallenge/Dockerfile
